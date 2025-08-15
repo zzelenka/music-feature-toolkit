@@ -10,7 +10,7 @@ Bienvenido. Este proyecto combina:
 Crear un conjunto modular de scripts para explorar características musicales (energía, tempo, tonalidad) y apoyar la curación algorítmica de playlists.
 
 ## Créditos y Backlink
-Datos de BPM y tonalidad por cortesía de [GetSongBPM.com](https://getsongbpm.com)
+Datos de BPM y tonalidad por cortesía de <a href="https://getsongbpm.com" rel="nofollow" target="_blank">GetSongBPM.com</a>
 
 ## Componentes
 - `spotify_check.py`: Diagnóstico y extracción básica de features (energía relativa) vía Spotify.
@@ -22,6 +22,10 @@ pip install -r requirements.txt
 python spotify_check.py
 python getsongbpm_client.py --artist "Daft Punk" --track "Harder Better Faster Stronger"
 ```
+
+## Enlaces
+- Repo: https://github.com/zzelenka/music-feature-toolkit
+- Página: https://zzelenka.github.io/music-feature-toolkit/
 
 ## Roadmap
 - Integrar caché local
