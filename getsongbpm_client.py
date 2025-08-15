@@ -3,7 +3,7 @@ import argparse
 import requests
 from dotenv import load_dotenv
 
-BASE_URL = "https://api.getsongbpm.com"
+BASE_URL = os.getenv("GETSONGBPM_BASE_URL", "https://api.getsongbpm.com").rstrip('/')
 
 load_dotenv()
 API_KEY = os.getenv("GETSONGBPM_API_KEY")
@@ -14,7 +14,7 @@ if not API_KEY:
 
 def request(endpoint: str, params: dict):
     params = {**params, 'api_key': API_KEY}
-    r = requests.get(f"{BASE_URL}/{endpoint}", params=params, timeout=20)
+    r = requests.get(f"{BASE_URL}/{endpoint.lstrip('/')}", params=params, timeout=20)
     if r.status_code != 200:
         raise SystemError(f"HTTP {r.status_code}: {r.text}")
     return r.json()

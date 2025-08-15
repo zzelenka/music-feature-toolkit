@@ -10,7 +10,7 @@ Bienvenido. Este proyecto combina:
 Crear un conjunto modular de scripts para explorar características musicales (energía, tempo, tonalidad) y apoyar la curación algorítmica de playlists.
 
 ## Créditos y Backlink
-Datos de BPM y tonalidad por cortesía de <a href="https://getsongbpm.com" rel="nofollow" target="_blank">GetSongBPM.com</a>
+Datos de BPM y tonalidad por cortesía de <a href="https://getsongbpm.com" target="_blank">GetSongBPM.com</a>
 
 ## Componentes
 - `spotify_check.py`: Diagnóstico y extracción básica de features (energía relativa) vía Spotify.
