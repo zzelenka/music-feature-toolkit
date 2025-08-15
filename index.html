@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music Feature Toolkit – Backlink</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Backlink requerido para uso de GetSongBPM API. Proyecto Music Feature Toolkit." />
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;max-width:760px;margin:40px auto;padding:0 1rem;line-height:1.55;color:#222}
+    h1{margin:0 0 1rem;font-size:2.1rem}
+    code{background:#f5f5f5;padding:2px 5px;border-radius:4px}
+    a{color:#0a58b3;text-decoration:none}a:hover{text-decoration:underline}
+    footer{margin-top:3rem;font-size:.8rem;color:#555}
+    .credit{border:1px solid #ddd;background:#fafafa;padding:1rem;border-radius:6px;margin:1.5rem 0}
+  </style>
+</head>
+<body>
+  <h1>Music Feature Toolkit</h1>
+  <p>Tooling para combinar datos de Spotify (autenticación, audio features) con BPM y tonalidad provenientes de la API de GetSongBPM.</p>
+
+  <div class="credit">
+    Datos de BPM y tonalidad por cortesía de <a href="https://getsongbpm.com" target="_blank">GetSongBPM.com</a>
+  </div>
+
+  <h2>Repositorio</h2>
+  <p><a href="https://github.com/zzelenka/music-feature-toolkit" target="_blank">https://github.com/zzelenka/music-feature-toolkit</a></p>
+
+  <h2>Uso rápido</h2>
+  <pre><code>pip install -r requirements.txt
+python spotify_check.py
+python getsongbpm_client.py --artist "Daft Punk" --track "Harder Better Faster Stronger"</code></pre>
+
+  <h2>Notas</h2>
+  <ul>
+    <li>Este index.html existe para cumplir el requisito de backlink público.</li>
+    <li>No se exponen secretos; el archivo <code>.env</code> no se commitea.</li>
+  </ul>
+
+  <p>Versión estática mínima para despliegue en Netlify.</p>
+  <footer>&copy; 2025 Music Feature Toolkit</footer>
+</body>
+</html>
